@@ -1,0 +1,19 @@
+﻿  Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/png/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\png\CMakeFiles\generate.stamp is up-to-date.
+  pngget.c
+  pngrio.c
+  pngwrite.c
+  png.c
+  pngmem.c
+  pngrtran.c
+  pngtrans.c
+  pngwtran.c
+  pngerror.c
+  pngpread.c
+  pngrutil.c
+  pngwutil.c
+  pngread.c
+  pngset.c
+  pngwio.c
+  Generating Code...
+  fltk_png.vcxproj -> C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\lib\Debug\fltk_pngd.lib

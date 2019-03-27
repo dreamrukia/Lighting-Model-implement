@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/test/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\test\CMakeFiles\generate.stamp is up-to-date.
+  menubar.cxx
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\test\menubar.cxx(160): warning C4838: conversion from 'Fl_Labeltype' to 'uchar' requires a narrowing conversion
+  menubar.vcxproj -> C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\bin\examples\Release\menubar.exe

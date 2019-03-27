@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

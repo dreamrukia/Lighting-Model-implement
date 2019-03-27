@@ -1,0 +1,508 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec3349413933.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:03 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3349413933.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3349413933.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3349413933.dir\Debug\cmTryCom.7FC59CB4.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3349413933.dir\Debug\cmTryCom.7FC59CB4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3349413933.dir\Debug\\" /Fd"cmTryCompileExec3349413933.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\TestEndianess.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3349413933.dir\Debug\\" /Fd"cmTryCompileExec3349413933.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\TestEndianess.c"
+  
+  TestEndianess.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3349413933.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3349413933.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3349413933.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3349413933.dir\Debug\TestEndianess.obj
+  cmTryCompileExec3349413933.vcxproj -> C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3349413933.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3349413933.dir\Debug\cmTryCom.7FC59CB4.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3349413933.dir\Debug\cmTryCom.7FC59CB4.tlog\cmTryCompileExec3349413933.lastbuildstate".
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3349413933.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.64
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function dlsym exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec3221341603.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:08 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3221341603.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3221341603.dir\Debug\cmTryCom.CD0F24BA.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3221341603.dir\Debug\cmTryCom.CD0F24BA.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dlsym /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3221341603.dir\Debug\\" /Fd"cmTryCompileExec3221341603.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dlsym /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3221341603.dir\Debug\\" /Fd"cmTryCompileExec3221341603.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3221341603.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3221341603.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3221341603.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3221341603.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _dlsym referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3221341603.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _dlsym referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3221341603.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3221341603.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.56
+
+
+Determining if the function png_get_valid exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec407223176.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:09 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec407223176.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec407223176.dir\Debug\cmTryCom.605C9CF1.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec407223176.dir\Debug\cmTryCom.605C9CF1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=png_get_valid /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec407223176.dir\Debug\\" /Fd"cmTryCompileExec407223176.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=png_get_valid /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec407223176.dir\Debug\\" /Fd"cmTryCompileExec407223176.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec407223176.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec407223176.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec407223176.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec407223176.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _png_get_valid referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec407223176.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _png_get_valid referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec407223176.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec407223176.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.45
+
+
+Determining if the function png_set_tRNS_to_alpha exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec3791143121.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:10 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3791143121.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3791143121.dir\Debug\cmTryCom.048786C8.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3791143121.dir\Debug\cmTryCom.048786C8.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3791143121.dir\Debug\\" /Fd"cmTryCompileExec3791143121.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3791143121.dir\Debug\\" /Fd"cmTryCompileExec3791143121.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3791143121.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3791143121.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3791143121.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3791143121.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _png_set_tRNS_to_alpha referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3791143121.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _png_set_tRNS_to_alpha referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3791143121.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3791143121.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.46
+
+
+Determining if the function scandir exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec3747584500.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:11 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3747584500.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3747584500.dir\Debug\cmTryCom.7EF3C7FC.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3747584500.dir\Debug\cmTryCom.7EF3C7FC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=scandir /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3747584500.dir\Debug\\" /Fd"cmTryCompileExec3747584500.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=scandir /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3747584500.dir\Debug\\" /Fd"cmTryCompileExec3747584500.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3747584500.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3747584500.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3747584500.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3747584500.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _scandir referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3747584500.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _scandir referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3747584500.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3747584500.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.50
+
+
+Determining if the function snprintf exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec742102336.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:11 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec742102336.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec742102336.dir\Debug\cmTryCom.D42243F7.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec742102336.dir\Debug\cmTryCom.D42243F7.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=snprintf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec742102336.dir\Debug\\" /Fd"cmTryCompileExec742102336.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=snprintf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec742102336.dir\Debug\\" /Fd"cmTryCompileExec742102336.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec742102336.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec742102336.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec742102336.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec742102336.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _snprintf referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec742102336.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _snprintf referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec742102336.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec742102336.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec2118755261.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:12 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2118755261.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec2118755261.dir\Debug\cmTryCom.4E23B660.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2118755261.dir\Debug\cmTryCom.4E23B660.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strlcat /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec2118755261.dir\Debug\\" /Fd"cmTryCompileExec2118755261.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strlcat /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec2118755261.dir\Debug\\" /Fd"cmTryCompileExec2118755261.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2118755261.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2118755261.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2118755261.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2118755261.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _strlcat referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2118755261.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _strlcat referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2118755261.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec2118755261.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.46
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec3620568940.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:13 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3620568940.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3620568940.dir\Debug\cmTryCom.CB021E0E.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3620568940.dir\Debug\cmTryCom.CB021E0E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strlcpy /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3620568940.dir\Debug\\" /Fd"cmTryCompileExec3620568940.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strlcpy /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3620568940.dir\Debug\\" /Fd"cmTryCompileExec3620568940.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3620568940.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3620568940.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3620568940.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3620568940.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _strlcpy referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3620568940.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _strlcpy referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3620568940.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3620568940.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.48
+
+
+Determining if the function vsnprintf exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec4245150146.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:13 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4245150146.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec4245150146.dir\Debug\cmTryCom.3BF04F88.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4245150146.dir\Debug\cmTryCom.3BF04F88.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=vsnprintf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec4245150146.dir\Debug\\" /Fd"cmTryCompileExec4245150146.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=vsnprintf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec4245150146.dir\Debug\\" /Fd"cmTryCompileExec4245150146.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4245150146.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4245150146.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4245150146.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec4245150146.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _vsnprintf referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+MSVCRTD.lib(vsnprintf.obj) : error LNK2001: unresolved external symbol _vsnprintf [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+MSVCRTD.lib(vsnprintf.obj) : error LNK2001: unresolved external symbol __vsnprintf [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4245150146.exe : fatal error LNK1120: 2 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _vsnprintf referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+  MSVCRTD.lib(vsnprintf.obj) : error LNK2001: unresolved external symbol _vsnprintf [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+  MSVCRTD.lib(vsnprintf.obj) : error LNK2001: unresolved external symbol __vsnprintf [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4245150146.exe : fatal error LNK1120: 2 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4245150146.vcxproj]
+
+    0 Warning(s)
+    4 Error(s)
+
+Time Elapsed 00:00:00.46
+
+
+Determining if the function glXGetProcAddressARB exists failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec4112193146.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:14 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4112193146.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec4112193146.dir\Debug\cmTryCom.2C63A0CE.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4112193146.dir\Debug\cmTryCom.2C63A0CE.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I\GL /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=glXGetProcAddressARB /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec4112193146.dir\Debug\\" /Fd"cmTryCompileExec4112193146.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I\GL /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=glXGetProcAddressARB /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec4112193146.dir\Debug\\" /Fd"cmTryCompileExec4112193146.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4112193146.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "-lGLU" "-lGL" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4112193146.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4112193146.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec4112193146.dir\Debug\CheckFunctionExists.obj
+LINK : warning LNK4044: unrecognized option '/lGLU'; ignored [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+LINK : warning LNK4044: unrecognized option '/lGL'; ignored [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _glXGetProcAddressARB referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4112193146.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : warning LNK4044: unrecognized option '/lGLU'; ignored [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+  LINK : warning LNK4044: unrecognized option '/lGL'; ignored [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol _glXGetProcAddressARB referenced in function _main [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4112193146.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec4112193146.vcxproj]
+
+    2 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.61
+
+
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTryCompileExec3943469467.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24728.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/31/2016 2:32:15 PM.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3943469467.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3943469467.dir\Debug\".
+  Creating directory "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3943469467.dir\Debug\cmTryCom.99FFFFB4.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3943469467.dir\Debug\cmTryCom.99FFFFB4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I\GL /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3943469467.dir\Debug\\" /Fd"cmTryCompileExec3943469467.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I\GL /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTryCompileExec3943469467.dir\Debug\\" /Fd"cmTryCompileExec3943469467.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+  
+  CheckIncludeFiles.c
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3943469467.vcxproj]
+Done Building Project "C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3943469467.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3943469467.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\CMakeTmp\cmTryCompileExec3943469467.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.33
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+

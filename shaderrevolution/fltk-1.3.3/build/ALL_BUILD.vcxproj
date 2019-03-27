@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B0D45572-61B8-422A-91EC-2A14E82C6FA0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\zlib;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\jpeg;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\zlib;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\jpeg;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\zlib;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\jpeg;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\zlib;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\jpeg;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3 -BC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build --check-stamp-file C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCCompiler.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\macros.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\setup.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\TestBigEndian.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFileCXX.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\resources.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\options.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\export.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\configh.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\fltk-config.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\install.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\cmake_uninstall.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3 -BC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build --check-stamp-file C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCCompiler.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\macros.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\setup.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\TestBigEndian.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFileCXX.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\resources.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\options.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\export.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\configh.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\fltk-config.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\install.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\cmake_uninstall.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3 -BC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build --check-stamp-file C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCCompiler.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\macros.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\setup.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\TestBigEndian.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFileCXX.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\resources.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\options.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\export.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\configh.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\fltk-config.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\install.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\cmake_uninstall.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3 -BC:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build --check-stamp-file C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCCompiler.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\3.1.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\macros.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\setup.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\TestBigEndian.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFileCXX.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\resources.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckFunctionExists.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\options.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\export.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\configh.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\fltk-config.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\install.cmake;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\cmake_uninstall.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\FLTKConfig.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMake\UseFLTK.cmake.in;C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/CubeView.vcxproj">
+      <Project>A4F52EB9-083C-4221-A77B-F531DB819D1E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/ZERO_CHECK.vcxproj">
+      <Project>BBF6A1AA-D139-4B71-B529-CB98CA11E61D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/adjuster.vcxproj">
+      <Project>654CE63E-DA9C-420C-9E27-D9FA97206931</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/arc.vcxproj">
+      <Project>FD5DF759-7410-4569-BADF-3FBDE816C215</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/ask.vcxproj">
+      <Project>158D82C0-D97A-47BC-9836-1AB7FB0133E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/bitmap.vcxproj">
+      <Project>B3621632-EEE2-44ED-A47D-FFE35F829D9D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/blocks.vcxproj">
+      <Project>85F1F743-62D3-4A55-8AC9-448CD40AA791</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/boxtype.vcxproj">
+      <Project>D2627A03-CB5D-4E4D-870D-4096776F28AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/browser.vcxproj">
+      <Project>A24B9101-F9C6-4A8B-9B4C-9FB01DBEEEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/button.vcxproj">
+      <Project>5F6EE742-65B6-4406-BD5A-AEFBF9828448</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/buttons.vcxproj">
+      <Project>43572670-1E34-4148-BBC5-7419BF7CD85A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/checkers.vcxproj">
+      <Project>1600A427-E945-4263-A74E-F927FB6C04AC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/clock.vcxproj">
+      <Project>13241265-CF05-4920-A714-599CC561220D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/colbrowser.vcxproj">
+      <Project>148B69CB-7151-449B-8EC0-D8DDBFDB29FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/color_chooser.vcxproj">
+      <Project>BBCD9B7D-C0C3-498B-9F43-5BAF4A983261</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/cube.vcxproj">
+      <Project>A12982FC-9101-40E9-8B59-0F200E620A4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/cursor.vcxproj">
+      <Project>6E71B1BD-CDE2-45B2-855C-E9D667F639EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/curve.vcxproj">
+      <Project>AF41B0DF-9CD4-4EA9-B7DD-5DDC499122FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/demo.vcxproj">
+      <Project>19688B03-8B2C-4650-964F-EF6FE7EF8EA6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/device.vcxproj">
+      <Project>AC6E02AC-0894-455E-87D7-600F8377E22F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/doublebuffer.vcxproj">
+      <Project>72041627-387F-42D5-A0F8-AEBF7A18EA04</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/editor.vcxproj">
+      <Project>5E2523A6-3D4B-407F-9BEB-8C5BEE87F0FC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/fast_slow.vcxproj">
+      <Project>913C613E-2E22-4655-9FB9-0E6BEC564846</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/file_chooser.vcxproj">
+      <Project>B37D8909-2D21-4A5E-B4C1-F4E2AA23EF06</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/src/fltk.vcxproj">
+      <Project>47324FC8-5267-47AA-BDA2-79E16BDAB042</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/src/fltk_forms.vcxproj">
+      <Project>C34E988F-2465-4B6E-84AA-AD7DCF4AC268</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/src/fltk_gl.vcxproj">
+      <Project>A2B6B272-7024-45E9-A231-B7B237AF29AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/src/fltk_images.vcxproj">
+      <Project>FAA922B2-2853-42BC-8783-6E04460BD7DD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/jpeg/fltk_jpeg.vcxproj">
+      <Project>84991CE2-1E08-4991-A4EE-7B4D7E178D45</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/png/fltk_png.vcxproj">
+      <Project>CD694DA9-057A-4AD8-91BF-883FAA4E76AA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/zlib/fltk_z.vcxproj">
+      <Project>A8114222-F47B-439B-A88D-0F6400E8ABF9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/fluid/fluid.vcxproj">
+      <Project>50CD5B66-2658-4C2C-86FB-8F06D16158B3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/fonts.vcxproj">
+      <Project>7C2F5E7D-2361-4129-879A-B110EDB669B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/forms.vcxproj">
+      <Project>1ECE1168-3DA3-41AE-8414-2ABB81ECDD46</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/fractals.vcxproj">
+      <Project>3AF8618D-8AFE-44AE-8846-B292EB01EF16</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/fullscreen.vcxproj">
+      <Project>D7B31993-404B-4C80-AF1F-3AFB3AB50787</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/gl_overlay.vcxproj">
+      <Project>BA934BA8-6DC9-4C4E-BFF8-6D692F9725E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/glpuzzle.vcxproj">
+      <Project>366BC035-AB3E-417B-9FF0-0FDCCE4C0731</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/hello.vcxproj">
+      <Project>13455FCE-0CAB-4D39-80D2-74EF6006944D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/icon.vcxproj">
+      <Project>801DEFE4-5E05-4F65-B29A-1F516E0B2251</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/iconize.vcxproj">
+      <Project>6E9FD9A0-4034-4AE3-ADC6-235F666B31A2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/image.vcxproj">
+      <Project>ECC98EB9-55DC-4372-8133-B94C674A46F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/inactive.vcxproj">
+      <Project>9F58D1D6-8229-446E-9FE4-4E0F7EBCF741</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/input.vcxproj">
+      <Project>43E09653-4637-4FC0-AFD5-B82CAA9F5F8E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/input_choice.vcxproj">
+      <Project>1212B916-D112-474E-80FD-732311D6426A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/keyboard.vcxproj">
+      <Project>3FB9CB0D-EC74-44D0-9E36-DBBA70709D85</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/label.vcxproj">
+      <Project>6CA91DDC-3E56-4701-ABF2-2DA523200E36</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/line_style.vcxproj">
+      <Project>8906C6B5-BFC1-432C-8325-9793714B497C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/list_visuals.vcxproj">
+      <Project>8D996E0D-77C1-46E5-84FE-694249A5BF07</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/mandelbrot.vcxproj">
+      <Project>5852F5B0-EF25-4140-BE26-F5E747B8AA25</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/menubar.vcxproj">
+      <Project>1072A619-4564-43E3-8BAB-DEBAECDB1E4C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/message.vcxproj">
+      <Project>210ED9D1-67AD-47A1-9402-BDBD9C4F0922</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/minimum.vcxproj">
+      <Project>DCDA6E5C-9966-427C-84F0-609025F703B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/native-filechooser.vcxproj">
+      <Project>9A880C96-5F07-4C6D-A923-2D8297C4559F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/navigation.vcxproj">
+      <Project>70F68582-BCB8-4512-A73A-BB148C8465FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/output.vcxproj">
+      <Project>E09DE016-3506-4BED-9511-EAA45D4BA3B1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/overlay.vcxproj">
+      <Project>56CEBF18-90FB-43EF-9723-9690EFFB9A7E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/pack.vcxproj">
+      <Project>5792B071-2D86-4758-9B38-8DC75819BBD3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/pixmap.vcxproj">
+      <Project>CCD8DB2B-01FC-400F-9852-B1A1BDED19BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/pixmap_browser.vcxproj">
+      <Project>DF96CF30-7715-467C-AAA6-6A3A5F8173FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/preferences.vcxproj">
+      <Project>208C82C0-6E59-46FD-A471-1D788C93EA5D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/radio.vcxproj">
+      <Project>0178A6F9-F764-4EB9-941C-14B7BF1A8FE7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/resize.vcxproj">
+      <Project>0B256529-39A6-43A6-8D89-856D62BFAAA3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/resizebox.vcxproj">
+      <Project>2776DA3C-07A7-4CFE-8120-466E0110CCB8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/rotated_text.vcxproj">
+      <Project>A72E9DA4-D15C-436E-B675-E3521FF701BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/scroll.vcxproj">
+      <Project>BB49A6CF-5ED1-481D-A28D-5CEC7A791023</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/shape.vcxproj">
+      <Project>7533F869-9ACF-454C-8A98-54CB20CEEAEF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/subwindow.vcxproj">
+      <Project>8975EE0D-D267-4F9C-8B06-1733D1BD68B3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/sudoku.vcxproj">
+      <Project>3F06F08C-B1B4-4798-B610-F4C89DBEF074</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/symbols.vcxproj">
+      <Project>6040D6CA-6E06-41B0-95D7-828A6745FDAD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/table.vcxproj">
+      <Project>E588F675-498B-4E6D-8BB1-E4BDE58621D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/tabs.vcxproj">
+      <Project>2F09338B-48BF-4264-9491-73045F4D80F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/test_help.vcxproj">
+      <Project>F9B62CB2-D80A-41E4-B00A-E653B1672D25</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/threads.vcxproj">
+      <Project>5B6B8913-BBE5-4CDE-AF51-ADA4D8D92466</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/tile.vcxproj">
+      <Project>2AC7D088-1713-4DE8-8E06-C6FA4CCEB20B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/tiled_image.vcxproj">
+      <Project>F2D48215-880A-4493-9FF3-F26B4ED1CB51</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/tree.vcxproj">
+      <Project>B147E310-A2E8-455A-BF58-EA2770E01BB8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/twowin.vcxproj">
+      <Project>8274AF2D-F6DC-43B0-A3B6-CA67C4D4EB7A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/unittests.vcxproj">
+      <Project>B420F44E-C725-469D-B699-6D908E289229</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/utf8.vcxproj">
+      <Project>702D512D-301D-4C43-BE99-22EBFB740902</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/valuators.vcxproj">
+      <Project>43D9C270-FC4F-458C-B20F-9B207B820398</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/build/test/windowfocus.vcxproj">
+      <Project>A06215B6-E3F3-48C9-B31F-23044C8B23A1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/test/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\test\CMakeFiles\generate.stamp is up-to-date.
+  fullscreen.cxx
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\test\fullscreen.cxx(90): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\test\fullscreen.cxx(94): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  fullscreen.vcxproj -> C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\bin\examples\Debug\fullscreen.exe

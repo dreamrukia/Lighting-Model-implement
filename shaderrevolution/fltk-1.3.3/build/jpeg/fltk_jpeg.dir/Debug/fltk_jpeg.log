@@ -1,0 +1,54 @@
+﻿  Building Custom Rule C:/Users/neilb_000/Desktop/Depot/Courses/4490/W16/assignments/A1VS2015/A1/A1/trace/trace_skel/Trace/fltk-1.3.3/jpeg/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\jpeg\CMakeFiles\generate.stamp is up-to-date.
+  jmemnobs.c
+  jaricom.c
+  jcomapi.c
+  jutils.c
+  jerror.c
+  jmemmgr.c
+  jcapimin.c
+  jcapistd.c
+  jcarith.c
+  jctrans.c
+  jcparam.c
+  jdatadst.c
+  jcinit.c
+  jcmaster.c
+  jcmarker.c
+  jcmainct.c
+  jcprepct.c
+  jccoefct.c
+  jccolor.c
+  jcsample.c
+  Generating Code...
+  Compiling...
+  jchuff.c
+  jcdctmgr.c
+  jfdctfst.c
+  jfdctflt.c
+  jfdctint.c
+  jdapimin.c
+  jdapistd.c
+  jdarith.c
+  jdtrans.c
+  jdatasrc.c
+  jdmaster.c
+  jdinput.c
+  jdmarker.c
+  jdhuff.c
+  jdmainct.c
+  jdcoefct.c
+  jdpostct.c
+  jddctmgr.c
+  jidctfst.c
+  jidctflt.c
+  Generating Code...
+  Compiling...
+  jidctint.c
+  jdsample.c
+  jdcolor.c
+  jquant1.c
+  jquant2.c
+  jdmerge.c
+  Generating Code...
+  fltk_jpeg.vcxproj -> C:\Users\neilb_000\Desktop\Depot\Courses\4490\W16\assignments\A1VS2015\A1\A1\trace\trace_skel\Trace\fltk-1.3.3\build\lib\Debug\fltk_jpegd.lib
